@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>{{ site.title | escape }}</title>
+
+  <link rel="stylesheet" href="{{ base_url }}/css/main.css" />
+  <link rel="stylesheet" href="{{ base_url }}/css/librecores.css" />
+
+  <link href='//fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+  <link href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,500,600,700" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <nav class="navbar navbar-fixed-top librecores-nav">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="{{ base_url }}">
+        </a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="">Overview</a></li>
+          <li><a href="">Getting Started</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+            aria-haspopup="true" aria-expanded="false">Users & Orgs <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="">Registration</a></li>
+              <li><a href="">Organizations</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+            aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="">Create & Update</a></li>
+              <li><a href="">3rd Party Integration</a></li>
+              <li><a href="">Metrics</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+            aria-haspopup="true" aria-expanded="false">CI <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="">Getting Started</a></li>
+              <li><a href="">Jenkinsfile Reference</a></li>
+              <li><a href="">Agent Setup</a></li>
+            </ul>
+          </li>
+	  <li><a href="">Get Involved</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container" id="maincontent">
+    {{ content }}
+  </div>
+
+  <hr>
+  <footer class="librecores-footer">
+    <p>
+      <img src="{{ base_url }}/img/cc-by-sa.png" height="15px"> Content licensed under <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution ShareAlike 4.0 International License</a> <br/>
+      LibreCores is a project of the <a href="http://fossi-foundation.org">Free and Open Source Silicon Foundation</a> &middot;
+      <a href="">Imprint</a>
+    </p>
+  </footer>
+</body>
+</html>
